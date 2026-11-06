@@ -291,7 +291,7 @@
             <div id="dekripsi-soal2"></div>
         </div>
 
-        <!-- FLOWCHART (MENGGUNAKAN GAMBAR SVG) -->
+             <!-- FLOWCHART (MENGGUNAKAN GAMBAR SVG) -->
         <div class="flowchart-container">
             <h2>Flowchart Enkripsi 🚀</h2>
             <div style="overflow-x: auto; margin-top: 20px;">
@@ -360,7 +360,7 @@
                 </svg>
             </div>
         </div>
-    <!-- LOGIKA JAVASCRIPT (Tetap Sama Sesuai PDF) -->
+    <!-- LOGIKA JAVASCRIPT -->
     <script>
         function prosesEnkripsi(plainteks, K, targetId) {
             let p = plainteks.replace(/[^A-Za-z]/g, '').toUpperCase();
@@ -437,7 +437,7 @@
 
             document.getElementById(targetId).innerHTML = `
                 <div class="step-item" style="border-left-color: var(--pink); background: var(--purple); color: white;">
-                    <strong style="color: var(--yellow);">Langkah Mencari Kunci Invers (Sesuai PDF):</strong><br>
+                    <strong style="color: var(--yellow);">Langkah Mencari Kunci Invers :</strong><br>
                     1. Determinan = (${K[0][0]}×${K[1][1]}) - (${K[0][1]}×${K[1][0]}) = ${det_asli} ${det_asli<0 ? `+ 130 = ${det}` : ''}. Mod 26 = <strong>${det_mod}</strong>.<br>
                     2. Invers Determinan = <strong>${inv_det}</strong>.<br>
                     3. Matriks Invers K⁻¹ = <strong>[[${K_inv[0][0]}, ${K_inv[0][1]}], [${K_inv[1][0]}, ${K_inv[1][1]}]]</strong>
